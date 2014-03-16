@@ -1,0 +1,14 @@
+/* my custom styles */
+	
+/* LAYOUT STYLES */
+html,body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	font-family: georgia, helvetica, sans-serif;
+	/* font-size: 20px; */
+}
