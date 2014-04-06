@@ -146,28 +146,55 @@ body {
 /* ____________________ #work ____________________ */
 
 #work {
-		margin-top: 50px;
+	margin-top: 50px;
 }
-		
+
+	.work-item {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 30px;
+	}
+
 	.work-overlay {
+    	display: block;
 		position: absolute;
 		top: 0;
-		left: 0;
-		width: 100%;
+		right: 0;
 		height: 100%;
-		background-color: rgba(51,51,51,0.9);
-		/* z-index: 15; */
-	}
-	
-	.work-contents {
-		display: table;
 		width: 100%;
-		height: 100%;
-		text-align: center;
+		max-width: 100%;
+		
+		padding-top: 40%;
+		
+		text-align:center;
+		z-index:2;
+		
+		border-radius: 4px;
+		/* background-color: rgba(51,51,51,0.9); */
+		background:rgba(66, 139, 202, 0.75);
+		
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
 	}
+	.work-overlay:hover {
+	  	opacity: .85;
+	}	
 	
-	.work-inner {
-		padding: 0 1.66667rem;
-		display: table-cell;
-		vertical-align: middle;
+	
+	.work-overlay > p {
+		color: #d1d1d1;
 	}
+	.work-overlay > h3 {
+		text-decoration: overline;
+	}
+	.work-overlay a {
+		text-decoration: underline;
+		color: #d1d1d1;
+	}
+	.work-overlay a:hover {
+		color: white;
+	}	
+	
+	.thumbnail {
+		margin-bottom: auto !important;
+	} 
