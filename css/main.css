@@ -81,11 +81,11 @@ body {
 			box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
 		}	
 		
-		.carousel-inner {
+		#testimonials-carousel .carousel-inner {
 			padding: 0;
 		}
 		
-		.carousel-inner img {
+		#testimonials-carousel .carousel-inner img {
 			border-radius: 6px 6px 0 0;
 			max-width: 100%;
 			vertical-align: middle;
@@ -93,7 +93,7 @@ body {
 			-ms-interpolation-mode: bicubic;
 		}
 		
-		.carousel-caption {
+		#testimonials-carousel .carousel-caption {
 			position: absolute;
 			left: auto !important;
 			bottom: auto !important;
