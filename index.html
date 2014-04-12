@@ -58,8 +58,11 @@
 			      			<div class="poll-right">
 				    			<span class="tel clearfix">тел.: +7 920 ...</span>
 				    			<span class="clearfix">Андрей</span>
-				    			<span class="callback clearfix">
-				    				<a class="btn btn-default" href="#" role="button">обратный звонок</a>
+				    			<span class="clearfix">
+									<!-- Button trigger modal -->
+									<button class="btn btn-primary" data-toggle="modal" data-target="#modal-callback">
+										обратный звонок
+									</button>
 				    			</span>
 				    		</div>
 			      		</div>
@@ -67,6 +70,39 @@
 	    		</div>
 	    	</div>
 	    	<!-- //#home -->
+	    	
+			<!-- modal-callback -->
+			<div class="modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-label-callback" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					  <h1 class="modal-title text-center" id="modal-label-callback">Обратный звонок</h1>
+				  </div>
+				  <div class="modal-body">
+					<form class="form col-md-12 center-block">
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-name" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg bfh-phone" id="modal-tel"  placeholder="Ваш телефон">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-topic" placeholder="В кратце тема">
+						</div>
+						<div class="form-group">
+						  <button class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="mandrill">Отправить</button>
+						  <!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
+						</div>
+					  </form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Назад</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- //#modal-callback -->		    	
 	    	
 			<!-- #about -->
 	    	<div id="about">
