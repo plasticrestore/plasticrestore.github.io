@@ -1,4 +1,7 @@
 /* my custom styles */
+
+/*	Fonts */	
+@import url(http://fonts.googleapis.com/css?family=Roboto:900&subset=latin,cyrillic);
 	
 /* LAYOUT STYLES */
 html,body {
@@ -20,6 +23,16 @@ body {
   /* height: 100%; */
   /* remove unnecessary gorizontal scroll */
   overflow: hidden;
+}
+
+h1, h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;		
+}
+
+h3 {
+	font-weight: 600;
 }
 
 
@@ -203,15 +216,13 @@ body {
 	 /* ___________________ //footer ___________________ */
 
 #footer {
-	/* border-top: 1px solid #ddd; */
 	bottom: 0;
 	width: 100%;
-	/* Set the fixed height of the footer here */
-	/* height: 110px; */
-    background-color: #f1f4f8;
+	background-color: #eee;
 	padding: 10px 0 30px;
 }
 
 	#footer .page-header {
 		border-bottom: 1px solid #b1b1b1;
+		padding-bottom: 20px;
 	}
