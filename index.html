@@ -80,7 +80,8 @@
 					  <h1 class="modal-title text-center" id="modal-label-callback">Обратный звонок</h1>
 				  </div>
 				  <div class="modal-body">
-					<form class="form col-md-12 center-block">
+				  	<div class="clearfix">
+					  <form class="form col-md-12 center-block">
 						<div class="form-group">
 						  <input type="text" class="form-control input-lg" id="modal-name" placeholder="Ваше имя">
 						</div>
@@ -91,10 +92,11 @@
 						  <input type="text" class="form-control input-lg" id="modal-topic" placeholder="В кратце тема">
 						</div>
 						<div class="form-group">
-						  <button class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="mandrill">Отправить</button>
+						  <button class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="mandrill-callback">Отправить</button>
 						  <!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
 						</div>
 					  </form>
+					</div>
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Назад</button>
@@ -330,7 +332,7 @@
 									<h3><a href="#">дно и бампера</a></h3>
 									<p>BMW. год 2013</p>
 								</div>
-								<img src="images/bmw.jpg" class="thumbnail img-responsive"
+								<img src="images/BMW.jpg" class="thumbnail img-responsive"
 									alt="дно, передний и задний бампер на BMW">
 							</div>
 						</div>
@@ -383,12 +385,88 @@
 	    				    			
 	    		</div>	    	
 	    	</div>
-	    	<!-- //#work -->	    	
-	    		    	
-	    
-	    
-	    
-		</div>	
+	    	<!-- //#work -->
+
+
+			<div id="footer">
+				<div class="container">
+					<h1 class="text-center page-header">У Вас остались вопросы?</h1>
+					
+					<div class="row">
+	    				<div class="col-4 col-sm-4 col-lg-4">
+	      					<h3>Заказать обратный звонок:</h3>
+		    				<p>Оставьте контактный телефон и наш специалист перезвонит Вам в ближайшее время</p>
+		    				<span class="clearfix">
+								<!-- Button trigger modal -->
+								<button class="btn btn-primary" data-toggle="modal" data-target="#modal-callback">
+									Заказать звонок
+								</button>
+				    		</span>
+	      				</div>
+	      				   				
+	      				<div class="col-4 col-sm-4 col-lg-4">     				
+	      					<h3>Позвонить Нам сейчас:</h3>
+	      					<p>Наш специалист готов ответить на интересующий Вас вопрос</p>
+	      					<span class="tel clearfix">тел.: +7 920 ...</span>
+	      					<span class="clearfix">Андрей</span>		
+	      				</div>
+	      				
+	      				<div class="col-4 col-sm-4 col-lg-4">
+							<h3>Задать вопрос on-line:</h3>
+	      					<p>Наш специалист ответит на интересующий Вас вопрос по e-mail</p>
+				    		<span class="clearfix">
+				    			<!--  TODO question form -->
+								<!-- Button trigger modal -->
+								<button class="btn btn-primary" data-toggle="modal" data-target="#modal-question">
+									Задать вопрос
+								</button>
+				    		</span>				    		
+			      		</div>
+	    			</div>					
+				</div>
+			
+			</div>
+			<!-- //#footer -->
+			
+			<!-- modal-question -->
+			<div class="modal fade" id="modal-question" tabindex="-1" role="dialog" aria-labelledby="modal-label-question" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					  <h1 class="modal-title text-center" id="modal-question">Задать вопрос</h1>
+				  </div>
+				  <div class="modal-body">
+				  	<div class="clearfix">
+					  <form class="form col-md-12 center-block">
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-name" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-email"  placeholder="Ваш e-mail">
+						</div>
+						<div class="form-group">
+<!-- 						  <input type="text" class="form-control input-lg" id="modal-topic" placeholder="Ваш вопрос"> -->
+						  <textarea class="form-control input-lg" id="modal-topic" rows="5" placeholder="Ваш вопрос"></textarea>
+						</div>
+						<div class="form-group">
+						  <button class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="mandrill-question">Отправить</button>
+						  <!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
+						</div>
+					  </form>
+					 </div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Назад</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- //#modal-callback -->
+
+
+
+	</div>	
 		<!-- //.site-wrapper container -->	    
 
 

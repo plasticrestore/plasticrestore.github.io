@@ -197,4 +197,21 @@ body {
 	
 	.thumbnail {
 		margin-bottom: auto !important;
-	} 
+	}
+	
+	
+	 /* ___________________ //footer ___________________ */
+
+#footer {
+	/* border-top: 1px solid #ddd; */
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	/* height: 110px; */
+    background-color: #f1f4f8;
+	padding: 10px 0 30px;
+}
+
+	#footer .page-header {
+		border-bottom: 1px solid #b1b1b1;
+	}
