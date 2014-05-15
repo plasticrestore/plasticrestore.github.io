@@ -1,0 +1,79 @@
+<div id="testimonials">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-12 white-panel">
+	    				
+	    					<!-- Carousel -->
+							<div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+	
+								<!-- Carousel items -->
+								<div class="carousel-inner">
+	
+									<div class="item active">
+										<div class="carousel-caption">
+											<blockquote>Ребята просто молодцы! Они круто нам помогли. Вы вообще не думали, что такое можно было починить, Но они справились. Так держать!</blockquote>
+											<cite>— Маша и Даша</cite>
+										</div>
+										<img src="images/and-culture.jpg" alt="AndCulture" width="998"
+											height="355">
+									</div>
+	
+	
+									<div class="item">
+										<div class="carousel-caption">
+											<blockquote>Using GatherContent has saved us
+												significant amounts of time over our previous Basecamp /
+												Google Docs approach. Clarity with clients and the team has
+												dramatically improved!</blockquote>
+											<cite>— Steven Milne, Digital Solutions Architect</cite>
+										</div>
+										<img src="images/steven-milne.jpg" alt="FifthRing" width="998"
+											height="355">
+									</div>
+	
+									<div class="item">
+										<div class="carousel-caption">
+											<blockquote>GatherContent helps us save an
+												average of 30 hours a week. It's great being able to spend
+												time actually writing content, instead of managing the
+												process.</blockquote>
+											<cite>— Becky Desforges, Digital Strategist</cite>
+										</div>
+										<img src="images/becky.jpg" alt="Deer Digital" width="998"
+											height="355">
+									</div>
+								</div>
+	
+								<!-- Control -->
+								<!-- 
+									    <a class="left carousel-control" href="#jcarousel" data-slide="prev">
+									        <span class="glyphicon glyphicon-chevron-left"></span>
+									    </a>
+									    <a class="right carousel-control" href="#jcarousel" data-slide="next">
+									        <span class="glyphicon glyphicon-chevron-right"></span>
+									    </a>
+	 							-->
+	
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+									<li data-target="#testimonials-carousel" data-slide-to="1"></li>
+									<li data-target="#testimonials-carousel" data-slide-to="2"></li>
+								</ol>
+	
+	
+								<!-- Carousel items -->
+								<div class="carousel-panel">
+									<p>
+										Если Вы наш клиент и хотите поделиться с остальными своими
+										впечатлениями, то просто осавьте свой отзыв.
+										<button type="button" class="btn btn-success">оставить
+											отзыв</button>
+									</p>
+								</div>
+								
+							</div> <!-- //#jcarousel -->
+						</div> <!-- //.white-panel -->
+			        </div>    		
+	    		</div>	    	
+	    	</div>
