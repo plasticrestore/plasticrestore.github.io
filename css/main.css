@@ -28,7 +28,8 @@ body {
 h1, h2 {
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;		
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;		
 }
 
 h3 {
@@ -230,6 +231,24 @@ h3 {
 	.thumbnail {
 		margin-bottom: auto !important;
 	}
+	
+
+	/** work-gallery */		
+			
+/* 			.carousel-control.left, 
+			.carousel-control.right{
+			  background-image:none;
+			  margin-top:10%;
+			  width:5%;
+			} */
+			
+	#work-title {
+		line-height: 2;	
+	}
+			
+	#work-gallery .modal-lg {
+				width: 1100px;
+			}
 	
 	
 	 /* ___________________ //footer ___________________ */

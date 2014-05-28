@@ -84,6 +84,38 @@ jQuery(document).ready(function() {
 	});
 	
 	
+	/** works gallery */
+	
+	/* activate the carousel */
+	$("#work-carousel").carousel({interval:false});
+
+	/* change modal title when slide changes */
+	$("#work-carousel").on("slid.bs.carousel", function () {
+	  $("#work-title").html($(this).find(".active img").attr("title"));
+	})
+
+	/* when clicking a thumbnail */
+	$(".work-item a").click(function(){
+	    var content = $("#work-inner");
+	    var title = $("#work-title");
+	  
+	    content.empty();  
+	    title.empty();
+	  
+	  	var id = this.id;  
+	    var repo = $("#img-repo .item");
+	    var repoCopy = repo.filter("#" + id).clone();
+	    var active = repoCopy.first();
+	  
+	    active.addClass("active");
+	    title.html(active.find("img").attr("title"));
+	  	content.append(repoCopy);
+
+	    // show the modal
+	  	$("#work-gallery").modal("show");
+	});
+	
+	
 
 					$('#rate-carousel').carousel({
 						interval : 4000
