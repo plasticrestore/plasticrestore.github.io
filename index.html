@@ -32,9 +32,12 @@
 		<!-- site wrapper container -->
 	    <div class="site-wrapper">
 	    
-	    	<!-- #home -->
-	    	<div id="home" class="clearfix">
-	    		<div class="container">
+	    <!--parallax 1 -->
+	    <div class="bg"></div>
+	    
+	    <div id="home" class="affix" >
+		<!-- <div id="home" class="clearfix" > -->
+			<div class="container">
 	    			<div class="row">
 	    				<div class="col-4 col-sm-4 col-lg-4">
 	      					<!--  <h1>ремонт пластика</h1>  -->
@@ -66,7 +69,7 @@
 									data-target="#modal-callback">обратный звонок</button>
 							</address>
 
-							<!-- 				    			<span class="tel clearfix">тел.: +7 920 229 52 19</span> -->
+<!-- 				    			<span class="tel clearfix">тел.: +7 920 229 52 19</span> -->
 <!-- 				    			<span class="tel clearfix">тел.: 8 (473) 229 52 19</span> -->
 <!-- 				    			<span class="clearfix">Андрей</span> -->
 <!-- 				    			<span class="clearfix"> -->
@@ -79,7 +82,11 @@
 			      		</div>
 	    			</div>
 	    		</div>
-	    	</div>
+		</div>
+		<!--/parallax 1-->
+	    
+	    	<!-- #home -->
+	    	<!-- <div id="home" class="clearfix"></div> -->
 	    	<!-- //#home -->
 	    	
 			<!-- modal-callback -->
@@ -157,7 +164,7 @@
 			            </div><!--/span-->
 			            
 			            <div class="col-4 col-sm-6 col-md-4">
-			            	<div class="cshare-form">
+			            	<div class="share-form">
 			            		<h1>Внимание: Акция</h1>
 			            		<h3>Оформи заказ в среду и получи скидку <span>10%</span></h3>
 			            		<p class="text-muted">Успейте заказать ремонт пластика сегодня.</p>
@@ -175,12 +182,12 @@
 	    		<div class="container">
 	    			<div class="row">
 					<div class="col-12 testimonials-panel">
-						<p class="pull-left text-success bg-success">Любые Ваши отзывы очень важны для нас.<br>
+						<p class="pull-left text-success bg-success" id="testimonials-quote">Любые Ваши отзывы очень важны для нас.<br>
 						Плохие отзывы - делают нас
 							лучше, а хорошие - просто приятны!
 						</p>
 						<p class="clearfix"></p>					
-						<p class="pull-left ">
+						<p class="pull-left" id="testimonials-button">
 							<button type="button" class="btn btn-success" 
 									data-toggle="modal" data-target="#modal-question">оставить отзыв</button>
 						</p>
