@@ -139,8 +139,8 @@ h3 {
 			z-index: 14;
 			border-top-right-radius: 6px;
 		}
-
-		.carousel-caption blockquote {
+		
+		#testimonials-carousel .carousel-caption blockquote {
 			border: 0px;
 			padding-left: 0px;
 			margin: 30px 0px 20px;
@@ -150,19 +150,47 @@ h3 {
 			line-height: 24px;
 		}		
 		
-		.carousel-indicators {
+ 		#testimonials-carousel .carousel-indicators {
 			left: auto;
-			right: 0; /* float right */
-			top: 330px; /* media fix */
+			right: 0; float right
+			top: 330px; media fix
 			bottom: auto !important;
 			margin-left: 0;
 			width: 320px;
-		}
+		} 
 		
-		.carousel-panel {
+ 		#testimonials-carousel .carousel-panel {
 			text-align: center;
 			padding: 25px 30px;
-		}
+		}		
+
+
+/* ____________________ #rate ____________________ */
+
+
+		#rate-carousel .carousel-caption blockquote {
+			border: 0px;
+			padding-left: 0px;
+			margin: 30px 0px 20px;
+			font-style: italic;
+			font-family: Georgia, serif;
+			font-size: 17px;
+			line-height: 24px;
+		}		
+		
+/* 		.carousel-indicators {
+			left: auto;
+			right: 0; float right
+			top: 330px; media fix
+			bottom: auto !important;
+			margin-left: 0;
+			width: 320px;
+		} */
+		
+/* 		.carousel-panel {
+			text-align: center;
+			padding: 25px 30px;
+		} */
 		
 		
 		
