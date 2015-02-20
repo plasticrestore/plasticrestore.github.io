@@ -1,5 +1,674 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		
+		<title>ремонт пластика</title>
+		
+		<meta name="robots" content="all">
+	
+		<meta name="description" content="ремонт всех видов пластика, ремонт авто пластика, ремонт и тюнинг фар, ремонт мото пластика и скутеров, ремонт пластика водной техники">
+		<meta name="keywords" content="web design, web development, css, html, css3, html5, javascript, jquery, java, eclipse">
+		<meta name="author" content="Mikhail Niedre">
+		
+		
+		<!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+		
+		
+		
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="css/main.css" type="text/css"  rel="stylesheet">
+		<!-- <link href="css/print.css" type="text/css" rel="stylesheet" media="print"> -->
+	
+		<!--[if lt IE 9]>
+	    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+	
+		<!-- site wrapper container -->
+	    <div class="site-wrapper">
+	    
+	    <!--parallax 1 -->
+	    <div class="bg"></div>
+	    
+	    <div id="home" class="affix" >
+		<!-- <div id="home" class="clearfix" > -->
+			<div class="container">
+	    			<div class="row">
+	    				<div class="col-4 col-sm-4 col-lg-4">
+	      					<!--  <h1>ремонт пластика</h1>  -->
+		    				<!--  <p>ремонт всех видов пластика</p>  -->
+<!-- 		    				<p><code>138</code> бамперов уже починено.</p> -->
+<!-- 		    				<p>А вы так и ездите с разбитым?</p> -->
+	      				</div>   				
+	      				<div class="col-6 col-sm-4 col-lg-6">     				
+	      				<!--
+	      					<ul class="top-nav">
+								<li class="current"><a href="#home">Начало</a></li>
+								<li><a href="#about">О нас</a></li>
+								<li><a href="#portfolio">Наша работа</a></li>
+								<li><a href="#testimonials">Отзывы</a></li>
+								<li><a href="#rates">Цены</a></li>
+								<li><a href="#contact">Контакты</a></li>
+							</ul>
+	      				-->			
+	      				</div>
+	      				<div class="col-2 col-sm-4 col-lg-2">
+			      			<div class="poll-right">
+							<address>
+								<abbr title="телефон сотовый">сот.:</abbr> +7 (920) 229-52-19<br>
+								<abbr title="телефон стационарный">тел.:</abbr> +7 (473) 229-52-19<br>
+								<br>
+								<!-- Button trigger modal -->
+								<button class="btn btn-primary" data-toggle="modal"
+									data-target="#modal-callback">Заказать обратный звонок</button>
+							</address>
+
+<!-- 				    			<span class="tel clearfix">тел.: +7 920 229 52 19</span> -->
+<!-- 				    			<span class="tel clearfix">тел.: 8 (473) 229 52 19</span> -->
+<!-- 				    			<span class="clearfix">Андрей</span> -->
+<!-- 				    			<span class="clearfix"> -->
+<!-- 									Button trigger modal -->
+<!-- 									<button class="btn btn-primary" data-toggle="modal" data-target="#modal-callback"> -->
+<!-- 										обратный звонок -->
+<!-- 									</button> -->
+<!-- 				    			</span> -->
+				    		</div>
+			      		</div>
+	    			</div>
+	    		</div>
+		</div>
+		<!--/parallax 1-->
+	    
+	    	<!-- #home -->
+	    	<!-- <div id="home" class="clearfix"></div> -->
+	    	<!-- //#home -->
+	    	
+			<!-- modal-callback -->
+			<div class="modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-label-callback" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					  <h1 class="modal-title text-center" id="modal-label-callback">Обратный звонок</h1>
+				  </div>
+				  <div class="modal-body">
+				  	<div class="clearfix">
+					  <form class="form col-md-12 center-block">
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-name" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg bfh-phone" id="modal-tel"  placeholder="Ваш телефон">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-topic" placeholder="В кратце описание вопроса">
+						</div>
+						<div class="form-group">
+						  <button class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="mandrill-callback">Отправить</button>
+						  <!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
+						</div>
+					  </form>
+					</div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Назад</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- //#modal-callback -->		    	
+	    	
+			<!-- #about -->
+	    	<div id="about">
+	    		<div class="container">
+	    			<div class="row">
+			            <div class="col-6 col-sm-6 col-md-4">
+			              <h2>О нас</h2>
+			              <p>Ремонт всех видов пластика - наша специализация.<br/>
+			              Мы занимаемся ремонтом пластика по "правильной" технологии и с использованием импортного оборудования:<br/>
+			              - БЕЗ сеток<br/>
+			              - БЕЗ клея<br/>
+			              - БЕЗ эпоксидки<br/>
+			              - и т.д. <br/>
+			              Мы делаем так, чтобы клиент остался доволен и рекомендовал нас и наши услуги.<br/>
+			              Помогаем нашим заказчикам с решением их проблем.</p>
+			               
+<!-- 			              <p><a class="btn btn-default" href="#" role="button">Подробнее »</a></p> -->
+			               </div><!--/span-->
+			            
+			            <div class="col-6 col-sm-6 col-md-4">
+			              <h2>Что мы делаем</h2>
+			              <p>* Ремонт АВТО пластика (бампера, радиаторы,  и пр.)<br/>
+					* Ремонт и ТЮНИНГ корпусов фар<br/>
+					* Ремонт МОТО пластика и скутеров <br/>
+					* Ремонт пластика ВОДНОЙ техники (лодки, яхты, гидроциклы)<br/>
+					* Ремонт пластика СНЕГОходов<br/>
+					* Ремонт пластика БЫТОВОГО обихода<br/>
+					* Ремонт пластика ёмкостей и БАССЕЙНОВ<br/>
+					* СПОРТивный тюнинг пластиковых деталей</p>
+			              <!-- 			              <p><a class="btn btn-default" href="#" role="button">Подробнее »</a></p> -->
+			            </div><!--/span-->
+			            
+			            <div class="col-12 col-sm-12 col-md-4">
+			              <h2>Как мы работаем</h2>
+			              <p>Осуществляем ремонт и восстановление всех видов пластика:<br/>
+			              * Сквозные проломы<br/>
+			              * Трещины<br/>
+			              * Восстанавливаем отсутствующие фрагменты<br/>
+			              * и т.п.<br/>
+			              На стоимость и сроки ремонта влияет наличие ВСЕХ фрагментов повреждённого пластика.</p></p>
+<!-- 			              <p><a class="btn btn-default" href="#" role="button">Подробнее »</a></p> -->
+			            </div><!--/span-->	            
+			        </div>    		
+	    		</div>	    	
+	    	</div>
+	    	<!-- //#about -->
+	    
+	    	<!-- #share -->
+	    <!--	<div id="share">
+	    		<div class="container">
+	    			<div class="row">
+			            <div class="col-8 col-sm-6 col-md-8 share-banner img-rounded">
+			              
+			            </div><!--/span-->
+			            
+			          <!--  <div class="col-4 col-sm-6 col-md-4">
+			            	<div class="share-form">
+			            		<h1>Внимание: Акция</h1>
+			            		<h3>Вступите в нашу группу ВКОНТАКТЕ и получите скидку <span>10%</span></h3>
+			            		<p class="text-muted">Успейте заказать ремонт пластика сегодня.</p>
+			              	</div>
+			            </div><!--/span-->              
+			    <!--    </div>    		
+	    		</div>	    	
+	    	</div>
+	    	<!-- //#share -->
+	    	
+	    	
+	    	
+	    	<!-- #testimonials
+	    	<div id="testimonials">
+	    		<div class="container">
+	    			<div class="row">
+					<div class="col-12 testimonials-panel">
+						<p class="pull-left text-success bg-success" id="testimonials-quote">Любые Ваши отзывы очень важны для нас.<br>
+						Плохие отзывы - делают нас
+							лучше, а хорошие - просто приятны!
+						</p>
+						<p class="clearfix"></p>					
+						<p class="pull-left" id="testimonials-button">
+							<button type="button" class="btn btn-success" 
+									data-toggle="modal" data-target="#modal-question">оставить отзыв</button>
+						</p>
+					</div>
+
+				</div>    		
+	    		</div>	    	
+	    	</div>
+	    	 -->
+	    	<!-- //#testimonials -->
+	    	
+			<!-- #modal-question -->
+			<div class="modal fade" id="modal-question" tabindex="-1" role="dialog" aria-labelledby="modal-label-question" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					  <h1 class="modal-title text-center" id="modal-question">Задать вопрос</h1>
+				  </div>
+				  <div class="modal-body">
+				  	<div class="clearfix">
+					  <form class="form col-md-12 center-block">
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-name" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control input-lg" id="modal-email"  placeholder="Ваш e-mail">
+						</div>
+						<div class="form-group">
+						  <!-- <input type="text" class="form-control input-lg" id="modal-topic" placeholder="Ваш вопрос"> -->
+						  <textarea class="form-control input-lg" id="modal-topic" rows="5" placeholder="Ваш вопрос"></textarea>
+						</div>
+						<div class="form-group">
+						  <button class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="mandrill-question">Отправить</button>
+						  <!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
+						</div>
+					  </form>
+					 </div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Назад</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- // #modal-callback -->	    	
+	    	
+	    	
+	    	<!-- #rate	    	
+	    	<div id="rate">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-lg-12">
+	    					<h1 class="text-center">Тарифы</h1>
+	    				</div>
+			        </div>    		
+
+					<div class="row">
+	    				<div class="col-lg-12">
+			    			<div class="carousel slide" id="rate-carousel" data-ride="carousel">
+
+						      <div class="carousel-inner" id="rate-inner">
+						      
+						        <div class="item active">
+						          	<img class="img-rounded" id="dummy-img" 
+						          		src="http://dummyimage.com/1200x440/999/ccc&amp;text=10000x20-0x2070000x200xD10x80.">
+						           <div class="carousel-caption">
+						            <h3>Ремонт бамперов</h3>
+						          </div>
+						        </div>
+						 
+						         <div class="item">
+						          	<img class="img-rounded" id="dummy-img" 
+						          		src="http://dummyimage.com/1200x440/ddd/555&amp;text=5000x20-0x20150000x200xD10x80.">
+						           <div class="carousel-caption">
+						            <h3>Ремонт мотозапчастей</h3>
+						          </div>
+						        </div>
+						        
+						        <div class="item">
+						          	<img class="img-rounded" id="dummy-img" 
+						          		src="http://dummyimage.com/1200x440/999/ccc&amp;text=1000x20-0x203000x200xD10x80.">
+						           <div class="carousel-caption">
+						            <h3>Ремонт игрушек</h3>
+						          </div>
+						        </div>
+						        
+						        <div class="item">
+						          	<img class="img-rounded" id="dummy-img" 
+						          		src="http://dummyimage.com/1200x440/ddd/555&amp;text=20000x20-0x20150000xD10x80.">
+						           <div class="carousel-caption">
+						            <h3>Восстановление запчастей</h3>
+						          </div>
+						        </div>
+						      </div>
+						 
+						 
+							<ul class="nav nav-pills nav-justified">
+						          <li data-target="#rate-carousel" data-slide-to="0" class="active"><a href="#">Ремонт <small>бамперов</small></a></li>
+						          <li data-target="#rate-carousel" data-slide-to="1"><a href="#">Ремонт <small>мотозапчастей</small></a></li>
+						          <li data-target="#rate-carousel" data-slide-to="2"><a href="#">Ремонт <small>игрушек</small></a></li>
+						          <li data-target="#rate-carousel" data-slide-to="3"><a href="#">Воссановление <small>запчастей</small></a></li>
+						        </ul>
+						    </div>
+				    	</div>
+			        </div>  
+	    		</div>
+	    		
+	    	</div>
+	    	 -->
+	    	<!-- //#rate -->
+	    	
+	    	
+	    	<div id="work">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-lg-12">
+	    					<h1 class="text-center">Наши работы</h1>
+	    				</div>
+
+						<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="tuning" title="При нажатии откроется галерея выполненных работ: Тюнинг">Тюнинг</a></h3>
+									<p>Тюнинг фар, бамперов и пр.</p>
+								</div>	
+								<img src="https://cloud.githubusercontent.com/assets/6358628/6204061/b87bf646-b54d-11e4-8bf4-9cb280bac752.jpg" class="thumbnail img-responsive" alt="Тюнинг">							
+								<!-- <img src="http://jourofcar.info/wp-content/uploads/2013/02/hummer1.jpg" class="thumbnail img-responsive" alt="Тюнинг"> -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00xA20xD10x8E0xD00xBD0xD00xB80xD00xBD0xD00xB3" class="thumbnail img-responsive" alt="Тюнинг"> -->
+							</div>
+						</div>
+	
+						<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="moto" title="При нажатии откроется галерея выполненных работ: Мото-пластик">Мото-пластик</a></h3>
+									<p>Ремонт мото-пластика</p>
+								</div>								
+								<img src="images/suzuki.jpg" class="thumbnail img-responsive" alt="Ремонт мото-пластика">
+								<!-- <img src="http://vitashina.ru/content/Image/IMG_0892_05_06.jpg" class="thumbnail img-responsive" alt="Ремонт мото-пластика"> -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x9C0xD00xBE0xD10x820xD00xBE0x2D0xD00xBF0xD00xBB0xD00xB00xD10x810xD10x820xD00xB80xD00xBA" class="thumbnail img-responsive" alt="Ремонт мото-пластика"> -->
+							</div>
+						</div>
+	
+			    		<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="water-vehicle" title="При нажатии откроется галерея выполненных работ: Ремонт водной техники">Водная техника</a></h3>
+									<p>Ремонт водной техники</p>
+								</div>
+								<img src="images/boat.jpg" class="thumbnail img-responsive" alt="Ремонт водной техники">
+								<!-- <img src="http://static.baza.farpost.ru/v/1383049392380_bulletin" class="thumbnail img-responsive" alt="Ремонт водной техники"> -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x920xD00xBE0xD00xB40xD00xBD0xD00xB00xD10x8F0x200xD10x820xD00xB50xD10x850xD00xBD0xD00xB80xD00xBA0xD00xB0" class="thumbnail img-responsive"
+									alt="Ремонт водной техники"> -->
+							</div>
+						</div>
+	
+			    		<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="fuel-tank" title="При нажатии откроется галерея выполненных работ: Ремонт бензобаков">Бензобаки</a></h3>
+									<p>Ремонт бензобаков</p>
+								</div>
+								<img src="images/benzobak.jpg" class="thumbnail img-responsive"
+									alt="Ремонт бензобаков">
+								
+								<!-- http://gorodscoy.ru/assets/images/Foto-Statii/medium/1283863687_benzobak.jpg -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x910xD00xB50xD00xBD0xD00xB70xD00xBE0xD00xB10xD00xB00xD00xBA0xD00xB8" class="thumbnail img-responsive"
+									alt="Ремонт бензобаков"> -->
+							</div>
+						</div>
+	
+			    		<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="mirrors" title="При нажатии откроется галерея выполненных работ: Ремонт зеркал">Зеркала</a></h3>
+									<p>Ремонт зеркал</p>
+								</div>
+								<img src="images/mirror.jpg" class="thumbnail img-responsive"
+									alt="Изготовление зеркал заднего вида">
+								<!-- http://price-altai.ru/uploads/690000/9500/699790/p170i5ka8dk7j1kdpd9inm41unf1.jpg -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x970xD00xB50xD10x800xD00xBA0xD00xB00xD00xBB0xD00xB0" class="thumbnail img-responsive"
+									alt="Изготовление зеркал заднего вида"> -->
+							</div>
+						</div>
+	
+			    		<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="optics" title="При нажатии откроется галерея выполненных работ: Ремонт отпитки">Оптика</a></h3>
+									<p>Ремонт оптики</p>
+								</div>
+								<img src="images/optica.jpg" class="thumbnail img-responsive" alt="Ремонт оптики">
+								<!-- http://spring-customs.com.ua/wp-content/uploads/2012/08/05032012327.jpg -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x9E0xD00xBF0xD10x820xD00xB80xD00xBA0xD00xB0" class="thumbnail img-responsive"
+									alt="Ремонт оптики"> -->
+							</div>
+						</div>
+						
+						<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="auto-plastic" title="При нажатии откроется галерея выполненных работ: Ремонт автопластика">Автопластик</a></h3>
+									<p>Ремонт автомобильного пластика</p>
+								</div>
+								<img src="images/lada.jpg" class="thumbnail img-responsive" alt="Ремонт автопластика">
+								<!-- https://f-a.d-cd.net/bcf21u-960.jpg -->	
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x900xD00xB20xD10x820xD00xBE0xD00xBF0xD00xBB0xD00xB00xD10x810xD10x820xD00xB80xD00xBA" class="thumbnail img-responsive"
+									alt="Ремонт автопластика"> -->
+							</div>
+						</div>
+	
+			    		<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="trucks" title="При нажатии откроется галерея выполненных работ: Ремонт пластика грузовиков">Грузовики</a></h3>
+									<p>Ремонт пластика для грузовиков</p>
+								</div>
+								<img src="images/truck.jpg" class="thumbnail img-responsive"
+									alt="Ремонт пластика для автобусов">
+								<!-- https://pp.vk.me/c316826/v316826353/6cc6/xVicKk1ihI0.jpg -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x930xD10x800xD10x830xD00xB70xD00xBE0xD00xB20xD00xB80xD00xBA0xD00xB8" class="thumbnail img-responsive"
+									alt="Ремонт пластика для грузовиков"> -->
+							</div>
+						</div>
+	
+			    		<div class="col-6 col-sm-6 col-md-4">
+							<div class="work-item">
+								<div class="work-overlay">
+									<h3><a data-toggle="modal" href="#" data-target="#work-gallery" id="buses" title="При нажатии откроется галерея выполненных работ: Ремонт пластика автобусов">Автобусы</a></h3>
+									<p>Ремонт пластика для автобусов</p>
+								</div>
+								<img src="images/torpedo.jpg" class="thumbnail img-responsive"
+									alt="Ремонт пластика для автобусов">
+								<!-- http://www.carwig.com/filez/Torpedo.JPG -->
+								<!-- <img src="http://dummyimage.com/350x350/000/fff&text=0xD00x900xD00xB20xD10x820xD00xBE0xD00xB10xD10x830xD10x810xD10x8B" class="thumbnail img-responsive"
+									alt="Ремонт пластика для автобусов"> -->
+							</div>
+						</div>					
+						
+	    			</div>
+	    				    			
+	    		</div>	    	
+	    	</div>
+	    	<!-- //#work -->
+			
+			<div class="hidden" id="img-repo">
+			
+					<!-- #tuning -->
+					<div class="item" id="tuning">
+						<img class="thumbnail img-responsive" title="тюнинг бампера" 
+							src="https://pp.vk.me/c316826/v316826353/6d7b/3KEmQkufaJE.jpg">
+					</div>
+					<div class="item" id="tuning">
+						<img class="thumbnail img-responsive" title="тюнинг фар"
+							src="https://pp.vk.me/c316826/v316826353/6d84/EVq5M2dmJ94.jpg">
+					</div>
+			
+			
+					<!-- #moto -->
+					<div class="item" id="moto">
+						<img class="thumbnail img-responsive" title="ремонт мото-пластика"
+							src="https://pp.vk.me/c316826/v316826353/6d69/B_mYWWdiXAY.jpg">
+						
+					</div>
+					<div class="item" id="moto">
+						<img class="thumbnail img-responsive" title="ремонт мото-пластика"
+							src="https://pp.vk.me/c316826/v316826353/6d72/IHCzsgW9gO0.jpg">				
+					</div>
+					
+					<!-- #water-vehicle -->
+					<div class="item" id="water-vehicle">
+						<img class="thumbnail img-responsive" title="ремонт пластика водной техники"
+							src="https://pp.vk.me/c316826/v316826353/6d57/fDDxzx1AVc4.jpg">
+					</div>
+						
+					<!-- #fuel-tank -->
+					<div class="item" id="fuel-tank">
+						<img class="thumbnail img-responsive" title="ремонт бензобаков"
+							src="https://pp.vk.me/c316826/v316826353/6d4e/EMeiTFiwfrQ.jpg">
+					</div>			
+						
+					<!-- #mirrors -->
+					<div class="item" id="mirrors">
+						<img class="thumbnail img-responsive" title="ремонт зеркал"
+							src="https://pp.vk.me/c316826/v316826353/6d29/YeS-Gdmz0rg.jpg">
+					</div>
+					<div class="item" id="mirrors">
+						<img class="thumbnail img-responsive" title="ремонт зеркал"
+							src="https://pp.vk.me/c316826/v316826353/6d30/gHRyvFJC5PQ.jpg">
+					</div>
+					<div class="item" id="mirrors">
+						<img class="thumbnail img-responsive" title="ремонт зеркал"
+							src="https://pp.vk.me/c316826/v316826353/6d37/SO4jJ75VBik.jpg">
+					</div>
+					<div class="item" id="mirrors">
+						<img class="thumbnail img-responsive" title="ремонт зеркал"
+							src="https://pp.vk.me/c316826/v316826353/6d3e/q7B4PM3HUDI.jpg">
+					</div>
+					<div class="item" id="mirrors">
+						<img class="thumbnail img-responsive" title="ремонт зеркал"
+							src="https://pp.vk.me/c316826/v316826353/6d45/fT52t6sGTBo.jpg">
+					</div>				
+			
+					<!-- #optics -->
+					<div class="item" id="optics">
+						<img class="thumbnail img-responsive" title="ремонт оптики"
+							src="https://pp.vk.me/c316826/v316826353/6d17/7a9C7Y2LOKQ.jpg">
+					</div>
+					<div class="item" id="optics">
+						<img class="thumbnail img-responsive" title="ремонт оптики"
+							src="https://pp.vk.me/c316826/v316826353/6d20/VcJ5nSg2xZE.jpg">
+					</div>
+					
+					
+					<!-- #auto-plastic -->
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6ccf/E8d4hw9Yef8.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6ccf/E8d4hw9Yef8.jpg">
+					</div>		
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6cd8/lBxvbD-ECl4.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6ce1/DFVBP0E5h1I.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6cea/JSeMwo1ySBU.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6cf3/IrkPow6W7fw.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6cfc/WKfQpZtjOR4.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6d05/6O0E1Li6erk.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6d0e/HQ6VFY7sK38.jpg">
+					</div>
+					<div class="item" id="auto-plastic">
+						<img class="thumbnail img-responsive" title="ремонт автопластика"
+							src="https://pp.vk.me/c316826/v316826353/6d60/21K8Z-NLzlM.jpg">
+					</div>
+					
+						
+					<!-- #trucks -->
+					<div class="item" id="trucks">
+						<img class="thumbnail img-responsive" title="ремонт пластика грузовиков и автобусов"
+							src="https://pp.vk.me/c316826/v316826353/6cbf/n8TJQKbdfgM.jpg">
+					</div>
+					
+					
+					<!-- #buses -->
+					<div class="item" id="buses">
+						<img class="thumbnail img-responsive" title="ремонт пластика грузовиков"
+							src="https://pp.vk.me/c316826/v316826353/6cc6/xVicKk1ihI0.jpg">
+					</div>
+			
+			</div> <!-- // #img-repo -->
+				
+	<div class="modal" id="work-gallery" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">×</button>
+					<h3 class="modal-title" id="work-title"></h3>
+				</div>
+				<div class="modal-body">
+					<div class="carousel" id="work-carousel">
+
+						<div class="carousel-inner" id="work-inner">
+						</div>
+
+						<a class="carousel-control left" href="#work-carousel" data-slide="prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+						</a>
+						<a class="carousel-control right" href="#work-carousel" data-slide="next">
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</a>
+
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // #work-gallery -->
+
+			<div id="footer">
+				<div class="container">
+					<h1 class="text-center page-header">У Вас остались вопросы?</h1>
+					
+					<div class="row">
+	    				<div class="col-4 col-sm-4 col-lg-4">
+	      					<h3>Заказать обратный звонок:</h3>
+		    				<p>Оставьте контактный телефон и наш специалист перезвонит Вам в ближайшее время</p>
+		    				<span class="clearfix">
+								<!-- Button trigger modal -->
+								<button class="btn btn-primary" data-toggle="modal" data-target="#modal-callback">
+									Заказать звонок
+								</button>
+				    		</span>
+	      				</div>
+	      				   				
+	      				<div class="col-4 col-sm-4 col-lg-4">     				
+	      					<h3>Наши контакты:</h3>
+	      					<p>г. Воронеж, ул. Приморская д. 140</p>
+	      					<span class="tel clearfix">тел.: +7 (920) 229-52-19</span>
+	      					<span class="clearfix">тел.: +7 (473) 229-52-19</span>
+	      					<span class="clearfix">Андрей, Михаил</span>
+	      					<span class="clearfix">e-mail: plastikVRN@gmail.com</span>
+	      					<span class="clearfix"> </span><br/>
+	      				         Мы ВКОНТАКТЕ <br/>
+	      				         www.VK.com/RemontPlastikaVRN<br/>
+	      				          . <br/>
+	      				         <span class="clearfix">Наш сайт www.РемонтПластика.рф</span>
+	      					
+	      				</div>
+	      				
+	      				<div class="col-4 col-sm-4 col-lg-4">
+							<h3>Задать вопрос on-line:</h3>
+	      					<p>Наш специалист ответит на интересующий Вас вопрос по e-mail</p>
+				    		<span class="clearfix">
+				    			
+								<!-- Button trigger modal -->
+								<button class="btn btn-primary" data-toggle="modal" data-target="#modal-question">
+									Задать вопрос
+								</button>
+								
+								<!-- Button trigger modal -->
+								<a type="button" class="btn btn-info" target="_blank" href="http://vk.com/remontplastikavrn">vk</a>								
+				    		</span>				    		
+			      		</div>
+	    			</div>	
+				</div>
+			
+			</div>
+			<!-- //#footer -->
+			
+	</div>	
+	<!-- //.site-wrapper container -->	    
+
+
+		<script src="js/jquery.min.js" type="text/javascript"></script>	
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>	
+		<script src="js/main.js" type="text/javascript"></script>
+		
+	</body>
+</html>
+
 	<head>
 		<meta charset='utf-8'>
 		
