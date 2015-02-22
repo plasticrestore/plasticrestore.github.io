@@ -1,3 +1,25 @@
+	    	<!-- #testimonials
+	    	<div id="testimonials">
+	    		<div class="container">
+	    			<div class="row">
+					<div class="col-12 testimonials-panel">
+						<p class="pull-left text-success bg-success" id="testimonials-quote">Р›СЋР±С‹Рµ Р’Р°С€Рё РѕС‚Р·С‹РІС‹ РѕС‡РµРЅСЊ РІР°Р¶РЅС‹ РґР»СЏ РЅР°СЃ.<br>
+						РџР»РѕС…РёРµ РѕС‚Р·С‹РІС‹ - РґРµР»Р°СЋС‚ РЅР°СЃ
+							Р»СѓС‡С€Рµ, Р° С…РѕСЂРѕС€РёРµ - РїСЂРѕСЃС‚Рѕ РїСЂРёСЏС‚РЅС‹!
+						</p>
+						<p class="clearfix"></p>					
+						<p class="pull-left" id="testimonials-button">
+							<button type="button" class="btn btn-success" 
+									data-toggle="modal" data-target="#modal-question">РѕСЃС‚Р°РІРёС‚СЊ РѕС‚Р·С‹РІ</button>
+						</p>
+					</div>
+
+				</div>    		
+	    		</div>	    	
+	    	</div>
+	    	 -->
+	    	<!-- //#testimonials -->
+
 <div id="testimonials">
 	    		<div class="container">
 	    			<div class="row">
@@ -11,8 +33,8 @@
 	
 									<div class="item active">
 										<div class="carousel-caption">
-											<blockquote>Ребята просто молодцы! Они круто нам помогли. Вы вообще не думали, что такое можно было починить, Но они справились. Так держать!</blockquote>
-											<cite>— Маша и Даша</cite>
+											<blockquote>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!</blockquote>
+											<cite>пїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ</cite>
 										</div>
 										<img src="images/and-culture.jpg" alt="AndCulture" width="998"
 											height="355">
@@ -25,7 +47,7 @@
 												significant amounts of time over our previous Basecamp /
 												Google Docs approach. Clarity with clients and the team has
 												dramatically improved!</blockquote>
-											<cite>— Steven Milne, Digital Solutions Architect</cite>
+											<cite>пїЅ Steven Milne, Digital Solutions Architect</cite>
 										</div>
 										<img src="images/steven-milne.jpg" alt="FifthRing" width="998"
 											height="355">
@@ -37,7 +59,7 @@
 												average of 30 hours a week. It's great being able to spend
 												time actually writing content, instead of managing the
 												process.</blockquote>
-											<cite>— Becky Desforges, Digital Strategist</cite>
+											<cite>пїЅ Becky Desforges, Digital Strategist</cite>
 										</div>
 										<img src="images/becky.jpg" alt="Deer Digital" width="998"
 											height="355">
@@ -65,10 +87,10 @@
 								<!-- Carousel items -->
 								<div class="carousel-panel">
 									<p>
-										Если Вы наш клиент и хотите поделиться с остальными своими
-										впечатлениями, то просто осавьте свой отзыв.
-										<button type="button" class="btn btn-success">оставить
-											отзыв</button>
+										пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+										пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
+										<button type="button" class="btn btn-success">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+											пїЅпїЅпїЅпїЅпїЅ</button>
 									</p>
 								</div>
 								

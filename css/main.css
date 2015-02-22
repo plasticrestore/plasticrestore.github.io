@@ -36,6 +36,11 @@ h3 {
 	font-weight: 600;
 }
 
+.ya-a:link, .ya-a:hover, .ya-a:visited {
+	color: #333;
+	text-decoration: none;
+	cursor: text;
+}
 
 
 /* ____________________ #home ____________________ */
