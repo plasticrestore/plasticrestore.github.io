@@ -47,7 +47,6 @@
 jQuery(document).ready(function() {
 	
 	/** mandrill callback */
-	
 	$("#mandrill-callback").click(function() {
 		var name = $("#modal-name").val();
 		var tel = $("#modal-tel").val();
@@ -64,24 +63,29 @@ jQuery(document).ready(function() {
 					"to" : [ {
 						"email" : "plasticrestore@ya.ru",
 						"type" : "to"
-					} ],
+					} , {
+	            			"email" : "plastikVRN@gmail.com",
+					        "type" : "to"
+					}],
 					"autotext" : "true",
-					"subject" : "callback: " + topic,
-					"html" : "<p><ul><li>" + name + "</li><li>" + tel + "</li>" + 
-							 "<li>" + topic + "</li></ul></p>"
+					"subject" : "callback",
+					"html" : "<h2>Перезвонить</h2>" +
+					         "<ul><li><b>Имя</b>: " + name + "</li>" +
+					         "<li><b>Телефон</b>: " + tel + "</li>" + 
+							 "<li><b>Тема</b>: " + topic + "</li></ul>"
 				},
 				"async" : false
 			}
 		})
 		.done(function(response) {
-			alert('Ваш запрос был отправлен!');
+			alert('Ваш запрос был отправлен! Мы перезвоним Вам в ближайшее время!');
 			// reset field after successful submission
 			$("#modal-name").val('');
 			$("#modal-tel").val('');
 			$("#modal-topic").val('');
 		})
 		.fail(function(response) {
-			alert('Во время отправки запроса произошла ошибка.');
+			alert('Ваш запрос не был отправлен! Во время отправки произошла ошибка.');
 		});
 		
 		//return false; // prevent page refresh
@@ -99,31 +103,36 @@ jQuery(document).ready(function() {
 			type : "POST",
 			url : "https://mandrillapp.com/api/1.0/messages/send.json",
 			data : {
-				"key" : "8cH2MKN75DD6Vbc9L_GPhg",
+				"key" : "MD15PjgJtFbaNPOusN_guA",
 				"message" : {
 					"from_email" : "question@plasticrestore.github.io",
 					"from_name" : "question",
 					"to" : [ {
 						"email" : "plasticrestore@ya.ru",
 						"type" : "to"
-					} ],
+					}, {
+	            			"email" : "plastikVRN@gmail.com",
+					        "type" : "to"
+					}],
 					"autotext" : "true",
-					"subject" : "callback: " + topic,
-					"html" : "<p><ul><li>" + name + "</li><li>" + question + "</li>" + 
-							 "<li>" + topic + "</li></ul></p>"
+					"subject" : "question",
+					"html" : "<h2>Ответить на вопорс</h2>" +
+			         "<ul><li><b>Имя</b>: " + name + "</li>" +
+			         "<li><b>e-mail</b>: " + email + "</li>" + 
+					 "<li><b>Вопрос</b>: " + topic + "</li></ul>"
 				},
 				"async" : false
 			}
 		})
 		.done(function(response) {
-			alert('Ваш запрос был отправлен!');
+			alert('Ваш запрос был отправлен! Мы ответим на Ваш вопрос в ближайшее время!');
 			// reset field after successful submission
 			$("#modal-name").val('');
 			$("#modal-email").val('');
 			$("#modal-topic").val('');
 		})
 		.fail(function(response) {
-			alert('Во время отправки запроса произошла ошибка.');
+			alert('Во время отправки вопроса произошла ошибка.');
 		});
 		
 		//return false; // prevent page refresh
