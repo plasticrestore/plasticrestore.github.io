@@ -33,13 +33,14 @@ $(document).ready(function() {
   });
   
   
-  $("#mandrill-callback").click(initMandrillCallback());
-  $("#mandrill-callback-2").click(initMandrillCallback());
-  $("#mandrill-callback-3").click(initMandrillCallback());
+  $("#mandrill-callback").click(initMandrillCallback);
+  $("#mandrill-callback-2").click(initMandrillCallback);
+  $("#mandrill-callback-3").click(initMandrillCallback);
 
 });
 
 function initMandrillCallback() {
+
     var name = $("#callback-name").val();
     var tel = $("#callback-tel").val();
 
@@ -81,8 +82,10 @@ function initMandrillCallback() {
       	alert('Во время отправки запроса произошла ошибка.');
     });
 
-    // чтоб не перебрасывало на /? страницу
-    return false;
+	//return false; // prevent page refresh
+	    // чтоб не перебрасывало на /? страницу
+});
+
 };
 
 // yandex.map
