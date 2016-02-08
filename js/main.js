@@ -34,7 +34,7 @@ $(document).ready(function() {
   
   
   $("#mandrill-callback").click(initMandrillCallback);
-  $("#mandrill-callback-2").click(initMandrillCallback);
+  //$("#mandrill-callback-2").click(initMandrillCallback);
   $("#mandrill-callback-3").click(initMandrillCallback);
 
 });
