@@ -82,8 +82,9 @@ function initMandrillCallback() {
       	alert('Во время отправки запроса произошла ошибка.');
     });
 
-	//return false; // prevent page refresh
-	    // чтоб не перебрасывало на /? страницу
+    // prevent page refresh
+    // чтоб не перебрасывало на /? страницу
+    return false; 
 });
 
 };
