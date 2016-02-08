@@ -33,15 +33,9 @@ $(document).ready(function() {
   });
   
   
-  $("#mandrill-callback").click(initMandrillCallback);
-  //$("#mandrill-callback-2").click(initMandrillCallback);
-  $("#mandrill-callback-3").click(initMandrillCallback);
-
-});
-
-function initMandrillCallback() {
-
-    var name = $("#callback-name").val();
+  //$("#mandrill-callback").click(initMandrillCallback);
+  $("#mandrill-callback").click(function() {
+		var name = $("#callback-name").val();
     var tel = $("#callback-tel").val();
 
     $.ajax({
@@ -85,7 +79,58 @@ function initMandrillCallback() {
     // prevent page refresh
     // чтоб не перебрасывало на /? страницу
     return false; 
-};
+  });
+  
+  //$("#mandrill-callback-2").click(initMandrillCallback);
+  //$("#mandrill-callback-3").click(initMandrillCallback);
+  $("#mandrill-callback-3").click(function() {
+    var name = $("#callback-name-3").val();
+    var tel = $("#callback-tel-3").val();
+
+    $.ajax({
+      type : "POST",
+      url : "https://mandrillapp.com/api/1.0/messages/send.json",
+      data : {
+        "key" : "8cH2MKN75DD6Vbc9L_GPhg",
+        "message" : {
+          "from_email" : "callback@plasticrestore.github.io",
+          "from_name" : "обратный звонок",
+          "to" : [ {
+		"email" : "plasticrestore@ya.ru",
+		"type" : "to"
+		} , {
+	        "email" : "plastikVRN@gmail.com",
+		"type" : "to"
+		}, {
+            	"email" : "webcane@yandex.ru",
+            	"type" : "to"
+          }],
+          "autotext" : "true",
+          "subject" : "callback",
+          "html" : "<h2>Перезвонить</h2>" +
+          "<ul><li><b>Имя</b>: " + name + "</li>" +
+          "<li><b>Телефон</b>: " + tel + "</li>"
+        },
+        "async" : false
+      }
+    })
+    .done(function(response) {
+      	alert('Ваш запрос был успешно отправлен!');
+      	// reset field after successful submission
+	$("#callback-name-3").val('');
+	$("#callback-tel-3").val('');
+
+    })
+    .fail(function(response) {
+      	alert('Во время отправки запроса произошла ошибка.');
+    });
+
+    // prevent page refresh
+    // чтоб не перебрасывало на /? страницу
+    return false; 
+  });
+
+});
 
 // yandex.map
 ymaps.ready(init);
