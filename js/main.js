@@ -82,9 +82,8 @@ function initMandrillCallback() {
     });
 
     // чтоб не перебрасывало на /? страницу
-    // return false;
- }
-}
+    return false;
+};
 
 // yandex.map
 ymaps.ready(init);
