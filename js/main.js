@@ -52,10 +52,7 @@ $(document).ready(function() {
 		} , {
 	        "email" : "plastikVRN@gmail.com",
 		"type" : "to"
-		}, {
-            	"email" : "webcane@yandex.ru",
-            	"type" : "to"
-          }],
+	   }],
           "autotext" : "true",
           "subject" : "callback",
           "html" : "<h2>Перезвонить</h2>" +
