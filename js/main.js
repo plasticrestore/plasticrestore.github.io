@@ -85,8 +85,6 @@ function initMandrillCallback() {
     // prevent page refresh
     // чтоб не перебрасывало на /? страницу
     return false; 
-});
-
 };
 
 // yandex.map
