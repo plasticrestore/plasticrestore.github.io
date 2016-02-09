@@ -149,7 +149,7 @@ function init() {
         }, {
             preset: 'islands#redIcon',
             iconColor: '#0095b6'
-        }));
+        }))
         .add(new ymaps.Placemark([51.730657, 39.201808], {
             balloonContent: 'М2: г. Воронеж, ул. Ломоносова, 115'
         }, {
