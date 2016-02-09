@@ -134,29 +134,46 @@ ymaps.ready(init);
 
 function init() {
 
-    // Создание экземпляра карты.
+        // Создание экземпляра карты.
     var myMap = new ymaps.Map('map', {
-            //center: [51.566717, 39.238465],
-            center: [51.655698, 39.150162],
+            center: [51.655698, 39.350162],
             zoom: 11
         }, {
             searchControlProvider: 'yandex#search'
         });
+		
 
     myMap.geoObjects
-        .add(new ymaps.Placemark([51.566717, 39.238465], {
-            balloonContent: 'Мастерская №1:\/r\/n г. Воронеж, ул. Приморская, 140'
+	// точка: Мастерская 1
+        .add(new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [51.566717, 39.238465]
+            },
+            properties: {
+                iconContent: 'Мастерская №1',
+		balloonContentHeader: "Левый берег",
+		balloonContentBody: "Воронеж, ул. Приморская, 140",
+            }
         }, {
-            preset: 'islands#redIcon',
-            iconColor: '#0095b6'
+            preset: 'islands#redStretchyIcon'
         }))
-        .add(new ymaps.Placemark([51.730657, 39.201808], {
-            balloonContent: 'Мастерская №2:\/r\/n  г. Воронеж, ул. Ломоносова, 115'
+		
+	// точка: Мастерская 2		
+        .add(new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [51.730657, 39.201808]
+            },
+            properties: {
+                iconContent: 'Мастерская №2',
+		balloonContentHeader: "Правый берег",
+		balloonContentBody: "Воронеж, ул. Ломоносова, 115",
+            }
         }, {
-            preset: 'islands#redIcon',
-            iconColor: '#0095b6'
-        }));
-
+            preset: 'islands#blueStretchyIcon'
+        }));		
+	
 	// Отключаем зум от колёсика мышки
 	myMap.behaviors.disable('scrollZoom');
 };
