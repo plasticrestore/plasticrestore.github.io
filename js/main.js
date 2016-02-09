@@ -145,13 +145,13 @@ function init() {
 
     myMap.geoObjects
         .add(new ymaps.Placemark([51.566717, 39.238465], {
-            balloonContent: 'Мастерская №1:/r/n г. Воронеж, ул. Приморская, 140'
+            balloonContent: 'Мастерская №1:\/r\/n г. Воронеж, ул. Приморская, 140'
         }, {
             preset: 'islands#redIcon',
             iconColor: '#0095b6'
         }))
         .add(new ymaps.Placemark([51.730657, 39.201808], {
-            balloonContent: 'Мастерская №2:/r/n  г. Воронеж, ул. Ломоносова, 115'
+            balloonContent: 'Мастерская №2:\/r\/n  г. Воронеж, ул. Ломоносова, 115'
         }, {
             preset: 'islands#redIcon',
             iconColor: '#0095b6'
