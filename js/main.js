@@ -137,7 +137,7 @@ function init() {
     // Создание экземпляра карты.
     var myMap = new ymaps.Map('map', {
             //center: [51.566717, 39.238465],
-            center: [51.665698, 39.150162],
+            center: [51.645698, 39.150162],
             zoom: 11
         }, {
             searchControlProvider: 'yandex#search'
@@ -145,13 +145,13 @@ function init() {
 
     myMap.geoObjects
         .add(new ymaps.Placemark([51.566717, 39.238465], {
-            balloonContent: 'М1: г. Воронеж, ул. Приморская, 140'
+            balloonContent: 'Мастерская №1:/r/n г. Воронеж, ул. Приморская, 140'
         }, {
             preset: 'islands#redIcon',
             iconColor: '#0095b6'
         }))
         .add(new ymaps.Placemark([51.730657, 39.201808], {
-            balloonContent: 'М2: г. Воронеж, ул. Ломоносова, 115'
+            balloonContent: 'Мастерская №2:/r/n  г. Воронеж, ул. Ломоносова, 115'
         }, {
             preset: 'islands#redIcon',
             iconColor: '#0095b6'
