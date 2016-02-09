@@ -203,6 +203,71 @@ a:focus {
     }
 }
 
+/* transparent form */
+#trans-panel {
+          color: #fff;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
+          line-height: 1.5em;
+}
+
+#trans-panel {
+          margin-top: 120px;
+          border-radius: 10px;
+}
+
+#trans-panel .panel-heading {
+            background: transparent;
+            border-bottom: 1px solid transparent;
+            border-top-right-radius: 9px;
+            border-top-left-radius: 9px;
+}
+
+#trans-panel .panel-title,
+#trans-panel button.form-control {
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 18px;
+}
+
+#trans-panel .input-group {
+          margin-bottom: 12px;
+}
+
+#trans-panel .input-group-addon,
+#trans-panel .form-control {
+          color: #fff;
+          background: transparent;
+          border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#trans-panel input.form-control {
+          border-left: 0px;
+          font-size: 16px;
+}
+
+#trans-panel input.form-control::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.6);
+}
+#trans-panel input.form-control:-moz-placeholder {
+          color: rgba(255, 255, 255, 0.6);
+}
+
+#trans-panel button.form-control {
+          background: rgba(255, 255, 255, 0.1);
+}
+
+#trans-panel .form-group-lg button.form-control {
+          height: 46px;
+          padding: 10px 0px;
+          font-size: 18px;
+          border-radius: 6px;
+}
+
+
 .btn-circle {
     width: 70px;
     height: 70px;
