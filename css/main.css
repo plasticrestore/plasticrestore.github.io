@@ -40,7 +40,7 @@ p {
         font-size: 20px;
         line-height: 1.6;
     }
-    
+
     .modal-sm {
     	width: 400px;
 	}
@@ -160,6 +160,13 @@ a:focus {
     }
 }
 
+
+/* @media (max-height: 768px) {
+  .navbar-brand {
+      font-size: 10px;
+  }
+} */
+
 .intro {
     display: table;
     width: 100%;
@@ -175,15 +182,15 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
+.intro-body {
     margin-top: 100px;
 }
 
-.intro .intro-body .brand-heading {
+.brand-heading {
     font-size: 40px;
 }
 
-.intro .intro-body .intro-text {
+.intro-text {
     font-size: 20px;
 }
 
@@ -193,14 +200,24 @@ a:focus {
         padding: 0;
     }
 
-    .intro .intro-body .brand-heading {
+    .brand-heading {
         font-size: 64px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro-text {
         font-size: 24px;
     }
 }
+
+/* @media (max-height: 768px) {
+  .intro {
+      padding: 60px 0;
+  }
+
+  .intro-body {
+      margin-top: 10px;
+  }
+} */
 
 .bottom-block {
   position: absolute;
@@ -233,7 +250,7 @@ a:focus {
 #trans-panel .panel-title,
 #trans-panel button.form-control {
     margin-top: 15px;
-    
+
     font-weight: 300;
     font-size: 18px;
 }
@@ -288,14 +305,20 @@ a:focus {
 }
 
 .intro-circle {
-    height: 400px;
+    height: 300px;
 }
 
-@media(min-width:768px) {
+/* @media(min-width:768px) {
   .intro-circle {
       height: 600px;
   }
-}
+} */
+
+/* @media (max-height: 768px) {
+  .intro-circle {
+      height: 100px;
+  }
+} */
 
 .btn-circle:hover,
 .btn-circle:focus {
@@ -362,6 +385,18 @@ a:focus {
     width: 90%;
 }
 
+/* @media (max-height: 768px) {
+  #tms {
+      position: relative;
+      bottom: 0;
+      width: 90%;
+  }
+  #tms img {
+    width: 20px;
+    height: 20px;
+  }
+} */
+
 
 /* Global Section Styles */
 section {
@@ -420,6 +455,17 @@ section#guaranty {
 }
 
 
+/* @media (max-height: 768px) {
+  #guaranty h2.section-heading {
+      font-size: 32px;
+  }
+
+  #guaranty h3.section-subheading {
+      font-size: 22px;
+  }
+} */
+
+
 
 /* advantages */
 
@@ -465,6 +511,16 @@ section#guaranty {
   line-height: 45px;
   color: #333;
 }
+
+/* @media (max-height: 768px) {
+  .share-heading {
+    font-size: 54px;
+  }
+
+  .share-subheading {
+    font-size: 24px;
+  }
+} */
 
 .panel-primary > .panel-heading {
   padding-top: 22px;
@@ -593,6 +649,7 @@ section#guaranty {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
   margin-bottom: 0
 }
+
 @media (min-width:768px) {
   .timeline:before {
     left: 50%
@@ -665,6 +722,43 @@ section#guaranty {
   }
 }
 
+/* @media (max-height: 768px) {
+
+  .timeline>li .timeline-image {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .timeline-image>img {
+    top: 10%;
+    height: 75%;
+  }
+
+  .timeline>li .timeline-panel,
+  .timeline>li.timeline-inverted>.timeline-panel {
+    padding-left: 80px;
+  }
+
+  .testimonials-carousel .item .testimonial-info .testimonial-author {
+    display: block;
+  }
+
+  .timeline-heading {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .timeline-heading h4 {
+    margin: 0 !important;
+  }
+
+  .timeline-body {
+    margin-left: 0px;
+    padding-bottom: 20px;
+  }
+} */
+
 
 
 
@@ -685,8 +779,8 @@ section#guaranty {
 }
 .testimonials-carousel .item .testimonial-info .testimonial-img {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 120px;
+  width: 120px;
   margin-right: 10px;
 }
 .testimonials-carousel .item .testimonial-info .testimonial-author {
@@ -737,7 +831,8 @@ font-size: 20px;
 .owl-next {
   right: 15px;
 }
- @media (min-width: 768px) {
+
+@media (min-width: 768px) {
   .testimonials-carousel .item {
     padding: 0 40px;
   }
@@ -746,6 +841,7 @@ font-size: 20px;
   display: block;
 } */
 }
+
 
 #direction {
   padding: 100px 0 0 0;
