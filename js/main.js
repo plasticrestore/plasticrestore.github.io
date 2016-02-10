@@ -64,10 +64,10 @@ $(document).ready(function() {
   .done(function(response) {
 	  $("#mandrill-modal").modal();
     	//alert('Ваш запрос был успешно отправлен!');
+    	
     	// reset field after successful submission
 	$("#callback-name-first").val('');
 	$("#callback-tel-first").val('');
-
   })
   .fail(function(response) {
     	alert('Во время отправки запроса произошла ошибка.');
@@ -110,10 +110,10 @@ $(document).ready(function() {
     .done(function(response) {
     	$("#mandrill-modal").modal();
       	//alert('Ваш запрос был успешно отправлен!');
+      	
       	// reset field after successful submission
-	$("#callback-name").val('');
-	$("#callback-tel").val('');
-
+		$("#callback-name").val('');
+		$("#callback-tel").val('');
     })
     .fail(function(response) {
       	alert('Во время отправки запроса произошла ошибка.');
@@ -160,10 +160,10 @@ $(document).ready(function() {
     .done(function(response) {
     	$("#mandrill-modal").modal();
       	//alert('Ваш запрос был успешно отправлен!');
+      	
       	// reset field after successful submission
-	$("#callback-name-3").val('');
-	$("#callback-tel-3").val('');
-
+		$("#callback-name-3").val('');
+		$("#callback-tel-3").val('');
     })
     .fail(function(response) {
       	alert('Во время отправки запроса произошла ошибка.');
