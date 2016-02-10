@@ -198,6 +198,11 @@ a:focus {
     }
 }
 
+.bottom-block {
+  position: absolute;
+  bottom: 0;
+}
+
 /* transparent form */
 #trans-panel {
     margin-top: 20px;
@@ -263,7 +268,6 @@ a:focus {
           border-radius: 6px;
 }
 
-
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -277,6 +281,16 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+}
+
+.intro-circle {
+    height: 600px;
+}
+
+@media(min-width:768px) {
+  .intro-circle {
+      height: 300px;
+  }
 }
 
 .btn-circle:hover,
