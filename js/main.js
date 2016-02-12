@@ -24,6 +24,24 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function() {
+	var workOwl = $("#work-carousel");
+	
+	workOwl.owlCarousel({
+		  autoPlay: 5000, //Set AutoPlay to 3 seconds
+	      navigation : false,
+	      slideSpeed : 300,
+	      paginationSpeed : 400,
+	      singleItem: true
+	});	
+	
+	// Custom Navigation Events
+	  $(".work-next").click(function(){
+		  workOwl.trigger('owl.next');
+	  })
+	  $(".work-prev").click(function(){
+		  workOwl.trigger('owl.prev');
+	  })
+	
   $("#demo-carousel").owlCarousel({
       navigation : false,
       slideSpeed : 300,
@@ -45,7 +63,7 @@ $(document).ready(function() {
         "from_email" : "callback@plasticrestore.github.io",
         "from_name" : "обратный звонок",
         "to" : [ {
-		"email" : "webcane@ya.ru",
+		"email" : "plasticrestore@ya.ru",
 		"type" : "to"
 		} , {
 	        "email" : "plastikVRN@gmail.com",

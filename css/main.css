@@ -760,6 +760,35 @@ section#guaranty {
 } */
 
 
+#work-carousel .owl-item {
+	margin: 0 auto;
+}
+
+.work-img {
+  width: 480px;
+  margin-top: -180px;
+}
+
+.work-nav-btn {
+
+    height: 70px;
+
+    top: 80px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.work-prev {
+    /* float: left; */
+    background: url(../img/arrows/carousel-leftex.png) no-repeat;
+}
+
+.work-next {
+    /* float: right; */
+    background: url(../img/arrows/carousel-rightex.png) no-repeat;
+}
+
+
 
 
 #testimonials {
