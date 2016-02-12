@@ -25,14 +25,13 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(document).ready(function() {
   $("#demo-carousel").owlCarousel({
-      navigation : true, // Show next and prev buttons
-      navigationText : ["<",">"],
+      navigation : false,
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem: true
   });
-  
-  
+
+
   $("#mandrill-callback-first").click(function() {
 		var name = $("#callback-name-first").val();
   var tel = $("#callback-tel-first").val();
@@ -64,7 +63,7 @@ $(document).ready(function() {
   .done(function(response) {
 	  $("#mandrill-modal").modal();
     	//alert('Ваш запрос был успешно отправлен!');
-    	
+
     	// reset field after successful submission
 	$("#callback-name-first").val('');
 	$("#callback-tel-first").val('');
@@ -75,9 +74,9 @@ $(document).ready(function() {
 
   // prevent page refresh
   // чтоб не перебрасывало на /? страницу
-  return false; 
+  return false;
 });
-  
+
   //$("#mandrill-callback").click(initMandrillCallback);
   $("#mandrill-callback").click(function() {
 		var name = $("#callback-name").val();
@@ -110,7 +109,7 @@ $(document).ready(function() {
     .done(function(response) {
     	$("#mandrill-modal").modal();
       	//alert('Ваш запрос был успешно отправлен!');
-      	
+
       	// reset field after successful submission
 		$("#callback-name").val('');
 		$("#callback-tel").val('');
@@ -121,9 +120,9 @@ $(document).ready(function() {
 
     // prevent page refresh
     // чтоб не перебрасывало на /? страницу
-    return false; 
+    return false;
   });
-  
+
   //$("#mandrill-callback-2").click(initMandrillCallback);
   //$("#mandrill-callback-3").click(initMandrillCallback);
   $("#mandrill-callback-3").click(function() {
@@ -160,7 +159,7 @@ $(document).ready(function() {
     .done(function(response) {
     	$("#mandrill-modal").modal();
       	//alert('Ваш запрос был успешно отправлен!');
-      	
+
       	// reset field after successful submission
 		$("#callback-name-3").val('');
 		$("#callback-tel-3").val('');
@@ -171,7 +170,7 @@ $(document).ready(function() {
 
     // prevent page refresh
     // чтоб не перебрасывало на /? страницу
-    return false; 
+    return false;
   });
 
 });
@@ -188,7 +187,7 @@ function init() {
         }, {
             searchControlProvider: 'yandex#search'
         });
-		
+
 
     myMap.geoObjects
 	// точка: Мастерская 1
@@ -205,8 +204,8 @@ function init() {
         }, {
             preset: 'islands#redStretchyIcon'
         }))
-		
-	// точка: Мастерская 2		
+
+	// точка: Мастерская 2
         .add(new ymaps.GeoObject({
             geometry: {
                 type: "Point",
@@ -219,8 +218,8 @@ function init() {
             }
         }, {
             preset: 'islands#blueStretchyIcon'
-        }));		
-	
+        }));
+
 	// Отключаем зум от колёсика мышки
 	myMap.behaviors.disable('scrollZoom');
 };
