@@ -765,12 +765,11 @@ section#guaranty {
 }
 
 .work-img {
-  width: 480px;
-  margin-top: -180px;
+  width: 945px;
+  /* margin-top: -180px; */
 }
 
 .work-nav-btn {
-
     height: 70px;
 
     top: 80px;
