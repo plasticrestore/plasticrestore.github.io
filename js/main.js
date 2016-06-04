@@ -85,11 +85,11 @@ $(document).ready(
 //            });
             }
 
-            e.preventDefault();
+            //e.preventDefault();
             $(this).get(0).reset();
             // prevent page refresh
             // чтоб не перебрасывало на /? страницу
-            //return false;
+            return false;
           });
 
       // $("#mandrill-callback").click(initMandrillCallback);
@@ -125,11 +125,11 @@ $(document).ready(
   //            });
             }
 
-            e.preventDefault();
+            //e.preventDefault();
             $(this).get(0).reset();
             // prevent page refresh
             // чтоб не перебрасывало на /? страницу
-            //return false;
+            return false;
           });
 
       // $("#mandrill-callback-2").click(initMandrillCallback);
@@ -166,11 +166,11 @@ $(document).ready(
   //            });
             }
 
-            e.preventDefault();
+            //e.preventDefault();
             $(this).get(0).reset();
             // prevent page refresh
             // чтоб не перебрасывало на /? страницу
-            //return false;
+            return false;
           });
 
     });
