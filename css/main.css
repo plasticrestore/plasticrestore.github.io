@@ -57,6 +57,10 @@ a:hover, a:focus {
 	color: #fed136;
 }
 
+.display-none {
+  display: none;
+}
+
 /* .text-muted {
   color: #333;
 } */
