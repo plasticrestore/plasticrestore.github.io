@@ -56,27 +56,34 @@ $(document).ready(
             var name = $("#callback-name-first");
             var tel = $("#callback-tel-first");
 
-            $.ajax({
-                  method: 'POST',
-                  url: '//formspree.io/plastikVRN@gmail.com',
-                  data: $('#callback-form-first').serialize(),
-                  datatype: 'json',
-                  error: function(xhr, textStatus, errorThrown) {
-                    console.log(xhr, textStatus, errorThrown);
-                  }
-              })
-              .done(function(response) {
-                 $("#mandrill-modal").modal();
-                 $('.submit-success').fadeToggle(400);
-                 // alert('Ваш запрос был успешно отправлен!');
-
-              // reset field after successful submission
-//              $("#callback-name-first").val('');
-//              $("#callback-tel-first").val('');
-            })
+            if(name.val() == "" || tel.val() == "") {
+              $('.submit-fail').fadeToggle(400);
+              return false;
+            }
+            else {
+              $.ajax({
+                    method: 'POST',
+                    url: '//formspree.io/plastikVRN@gmail.com',
+                    data: $('#callback-form-first').serialize(),
+                    datatype: 'json',
+                    error: function(xhr, textStatus, errorThrown) {
+                      console.log(xhr, textStatus, errorThrown);
+                    }
+                })
+                .done(function(response) {
+                   $("#mandrill-modal").modal();
+                   $('.submit-success').fadeToggle(400);
+                   // alert('Ваш запрос был успешно отправлен!');
+  
+                // reset field after successful submission
+  //              $("#callback-name-first").val('');
+  //              $("#callback-tel-first").val('');
+              });
+            
 //            .fail(function(response) {
 //              alert('Во время отправки запроса произошла ошибка.');
 //            });
+            }
 
             e.preventDefault();
             $(this).get(0).reset();
@@ -88,97 +95,82 @@ $(document).ready(
       // $("#mandrill-callback").click(initMandrillCallback);
       $("#mandrill-callback").click(
           function() {
-            var name = $("#callback-name").val();
-            var tel = $("#callback-tel").val();
+            var name = $("#callback-name");
+            var tel = $("#callback-tel");
 
-            $.ajax(
-                {
-                  type : "POST",
-                  url : "https://mandrillapp.com/api/1.0/messages/send.json",
-                  data : {
-                    "key" : "8cH2MKN75DD6Vbc9L_GPhg",
-                    "message" : {
-                      "from_email" : "callback@plasticrestore.github.io",
-                      "from_name" : "обратный звонок",
-                      "to" : [ {
-                        "email" : "plasticrestore@ya.ru",
-                        "type" : "to"
-                      }, {
-                        "email" : "plastikVRN@gmail.com",
-                        "type" : "to"
-                      }
-                      ],
-                      "autotext" : "true",
-                      "subject" : "callback",
-                      "html" : "<h2>Перезвонить</h2>" + "<ul><li><b>Имя</b>: " + name + "</li>"
-                          + "<li><b>Телефон</b>: " + tel + "</li>"
-                    },
-                    "async" : false
+            if(name.val() == "" || tel.val() == "") {
+              $('.submit-fail').fadeToggle(400);
+              return false;
+            }
+            else {
+              $.ajax({
+                  method: 'POST',
+                  url: '//formspree.io/plastikVRN@gmail.com',
+                  data: $('#callback-form').serialize(),
+                  datatype: 'json',
+                  error: function(xhr, textStatus, errorThrown) {
+                    console.log(xhr, textStatus, errorThrown);
                   }
                 }).done(function(response) {
-              $("#mandrill-modal").modal();
-              // alert('Ваш запрос был успешно отправлен!');
+                  $("#mandrill-modal").modal();
+                  $('.submit-success').fadeToggle(400);
+                // alert('Ваш запрос был успешно отправлен!');
+  
+                // reset field after successful submission
+  //              $("#callback-name").val('');
+  //              $("#callback-tel").val('');
+              });
+  //            .fail(function(response) {
+  //              alert('Во время отправки запроса произошла ошибка.');
+  //            });
+            }
 
-              // reset field after successful submission
-              $("#callback-name").val('');
-              $("#callback-tel").val('');
-            }).fail(function(response) {
-              alert('Во время отправки запроса произошла ошибка.');
-            });
-
+            e.preventDefault();
+            $(this).get(0).reset();
             // prevent page refresh
             // чтоб не перебрасывало на /? страницу
-            return false;
+            //return false;
           });
 
       // $("#mandrill-callback-2").click(initMandrillCallback);
       // $("#mandrill-callback-3").click(initMandrillCallback);
       $("#mandrill-callback-3").click(
           function() {
-            var name = $("#callback-name-3").val();
-            var tel = $("#callback-tel-3").val();
+            var name = $("#callback-name-3");
+            var tel = $("#callback-tel-3");
 
-            $.ajax(
-                {
-                  type : "POST",
-                  url : "https://mandrillapp.com/api/1.0/messages/send.json",
-                  data : {
-                    "key" : "8cH2MKN75DD6Vbc9L_GPhg",
-                    "message" : {
-                      "from_email" : "callback@plasticrestore.github.io",
-                      "from_name" : "обратный звонок",
-                      "to" : [ {
-                        "email" : "plasticrestore@ya.ru",
-                        "type" : "to"
-                      }, {
-                        "email" : "plastikVRN@gmail.com",
-                        "type" : "to"
-                      }, {
-                        "email" : "webcane@yandex.ru",
-                        "type" : "to"
-                      }
-                      ],
-                      "autotext" : "true",
-                      "subject" : "callback",
-                      "html" : "<h2>Перезвонить</h2>" + "<ul><li><b>Имя</b>: " + name + "</li>"
-                          + "<li><b>Телефон</b>: " + tel + "</li>"
-                    },
-                    "async" : false
-                  }
-                }).done(function(response) {
-              $("#mandrill-modal").modal();
-              // alert('Ваш запрос был успешно отправлен!');
+            if(name.val() == "" || tel.val() == "") {
+              $('.submit-fail').fadeToggle(400);
+              return false;
+            }
+            else {
+              $.ajax({
+                method: 'POST',
+                url: '//formspree.io/plastikVRN@gmail.com',
+                data: $('#callback-form-3').serialize(),
+                datatype: 'json',
+                error: function(xhr, textStatus, errorThrown) {
+                  console.log(xhr, textStatus, errorThrown);
+                }
+              }).done(function(response) {
+                  $("#mandrill-modal").modal();
+                  $('.submit-success').fadeToggle(400);
+                // alert('Ваш запрос был успешно отправлен!');
+  
+                // reset field after successful submission
+  //              $("#callback-name-3").val('');
+  //              $("#callback-tel-3").val('');
+              });
+  //            .fail(function(response) {
+  //              alert('Во время отправки запроса произошла ошибка.');
+  //            });
+            }
 
-              // reset field after successful submission
-              $("#callback-name-3").val('');
-              $("#callback-tel-3").val('');
-            }).fail(function(response) {
-              alert('Во время отправки запроса произошла ошибка.');
-            });
-
+            e.preventDefault();
+            $(this).get(0).reset();
             // prevent page refresh
             // чтоб не перебрасывало на /? страницу
-            return false;
+            //return false;
           });
 
     });

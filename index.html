@@ -521,7 +521,7 @@
                             <span class="input-group-addon" id="basic-addon1">
                               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 									</span>
-									<input type="text" id="callback-name" class="form-control"
+									<input type="text"  name="name" id="callback-name" class="form-control"
 										placeholder="Ваше имя" aria-describedby="basic-addon1">
 								</div>
 
@@ -529,9 +529,12 @@
                             <span class="input-group-addon" id="basic-addon2">
                               <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
 									</span>
-									<input type="text" id="callback-tel" class="form-control"
+									<input type="text" name="phone" id="callback-tel" class="form-control"
 										placeholder="Ваше телефон" aria-describedby="basic-addon2">
 								</div>
+								
+								<input type="hidden" name="_subject" value="перезвонить 2" />
+                  <input type="text" name="_gotcha" style="display:none" />
 
 								<div class="form-group form-group-lg">
 									<div class="col-sm-12">
@@ -541,6 +544,12 @@
                       <span class="label">*</span>
                       <a href="#privacy"><abbr title="Ваши данные не при каких обстоятельствах не будут переданы 3-им лицам и использованы для рассылок не связанных с заказом.">конфиденциально</abbr></a>
                     </p>
+                    <div class="alert alert-danger center-block submit-fail display-none">
+                      Во время отправки запроса произошла ошибка.</a>
+                    </div>
+                    <div class="alert alert-success center-block submit-success display-none">
+                      Ваш запрос был успешно отправлен!</a>
+                    </div>
 									</div>
 								</div>
 							</form>
@@ -859,16 +868,21 @@
 								<div class="input-group input-group-lg">
 									<span class="input-group-addon" id="basic-addon1"> <span
 										class="glyphicon glyphicon-user" aria-hidden="true"></span>
-									</span> <input type="text" id="callback-name-3" class="form-control"
+									</span> 
+									<input type="text"  name="name" id="callback-name-3" class="form-control"
 										placeholder="Ваше имя" aria-describedby="basic-addon1">
 								</div>
 
 								<div class="input-group input-group-lg">
 									<span class="input-group-addon" id="basic-addon2"> <span
 										class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-									</span> <input type="text" id="callback-tel-3" class="form-control"
+									</span> 
+									<input type="text" name="phone" id="callback-tel-3" class="form-control"
 										placeholder="Ваше телефон" aria-describedby="basic-addon2">
 								</div>
+								
+								<input type="hidden" name="_subject" value="обратный звонок 3" />
+                  <input type="text" name="_gotcha" style="display:none" />
 
 								<div class="form-group form-group-lg">
 									<div class="col-sm-12">
@@ -878,6 +892,12 @@
   											<span class="label">*</span>
   											<a href="#privacy"><abbr title="Ваши данные не при каких обстоятельствах не будут переданы 3-им лицам и использованы для рассылок не связанных с заказом.">конфиденциально</abbr></a>
   									  </p>
+  									  <div class="alert alert-danger center-block submit-fail display-none">
+                      Во время отправки запроса произошла ошибка.</a>
+                    </div>
+                    <div class="alert alert-success center-block submit-success display-none">
+                      Ваш запрос был успешно отправлен!</a>
+                    </div>
 									</div>
 								</div>
 							</form>
