@@ -58,7 +58,7 @@ $(document).ready(
 
             $.ajax({
                   method: 'POST',
-                  url: '//formspree.io/plasticrestore@ya.ru',
+                  url: '//formspree.io/webcane@ya.ru',
                   data: $('#callback-form-first').serialize(),
                   datatype: 'json',
                   error: function(xhr, textStatus, errorThrown) {
