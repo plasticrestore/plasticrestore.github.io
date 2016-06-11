@@ -101,8 +101,7 @@ a:hover, a:focus {
 	color: #fff;
 }
 
-.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active
-	{
+.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
 	outline: 0;
 }
 
@@ -139,7 +138,45 @@ a:hover, a:focus {
 	color: #fff;
 }
 
+@media screen and (max-width: 320px) {
+	.navbar-nav {
+		margin: 0;
+	}
+	.nav>li>a {
+		margin-left: 15px;
+	}
+	.navbar-brand {
+		line-height: 25px;
+	}
+	/*.navbar-fixed-top {
+		padding-top: 20px;
+	}*/
+	.navbar-custom .container {
+		padding: 0;
+	}
+
+	.navbar-custom .navbar-brand {
+		padding: 10px 10px;
+		margin-left: 15px;
+	}
+	.navbar-custom .navbar-brand .nav-tel {
+		float:left;
+		letter-spacing: 3px;
+	}
+
+	.navbar-toggle {
+		padding: 0;
+		margin: 0;
+		margin-right: 30px;
+		/*border: 1px solid #fff;*/
+	}
+	.navbar-toggle .icon-bar {
+		height: 0;
+	}
+}
+
 @media ( min-width :768px) {
+
 	.navbar-custom {
 		padding: 20px 0;
 		border-bottom: 0;
@@ -148,6 +185,7 @@ a:hover, a:focus {
 		-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
 		-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
 		transition: background .5s ease-in-out, padding .5s ease-in-out;
+		border-bottom: none;
 	}
 	.navbar-custom.top-nav-collapse {
 		padding: 0;
@@ -178,6 +216,12 @@ a:hover, a:focus {
 
 .intro-body {
 	margin-top: 100px;
+}
+
+@media screen and (max-width: 320px) {
+	.intro {
+		padding: 80px 0;
+	}
 }
 
 .brand-heading {
@@ -281,6 +325,13 @@ a:hover, a:focus {
 	margin: 0 0 0 25px;
 }
 
+
+@media screen and (max-width: 320px) {
+	#trans-panel {
+		margin-top: 80px;
+	}
+}
+
 .help-block a {
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -339,96 +390,40 @@ a:hover, a:focus {
 	-moz-animation-timing-function: linear;
 }
 
-@
--webkit-keyframes pulse { 0% {
+@ -webkit-keyframes pulse {
+	0% {
 	-webkit-transform: scale(1);
 	transform: scale(1);
+  }
+
+  50% {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  }
+
+ 100% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+ }
 }
 
-50%
-{
--webkit-transform
-:
- 
-scale
-(1
-.2
-);
-
-        
-transform
-:
- 
-scale
-(1
-.2
-);
-
-    
-}
-100%
-{
--webkit-transform
-:
- 
-scale
-(1);
-
-        
-transform
-:
- 
-scale
-(1);
-
-    
-}
-}
-@
--moz-keyframes pulse { 0% {
+@ -moz-keyframes pulse {
+	0% {
 	-moz-transform: scale(1);
 	transform: scale(1);
+  }
+
+50% {
+-moz-transform: scale(1.2);
+transform: scale(1.2);
 }
 
-50%
-{
--moz-transform
-:
- 
-scale
-(1
-.2
-);
-
-        
-transform
-:
- 
-scale
-(1
-.2
-);
-
-    
+100% {
+-moz-transform: scale(1);
+transform: scale(1);
+ }
 }
-100%
-{
--moz-transform
-:
- 
-scale
-(1);
 
-        
-transform
-:
- 
-scale
-(1);
-
-    
-}
-}
 #tms {
 	position: absolute;
 	bottom: 30px;
@@ -517,7 +512,7 @@ section#guaranty {
 
 /* advantages */
 #advantages {
-	
+
 }
 
 #advantages .row {
@@ -545,11 +540,11 @@ section#guaranty {
 
 #share>div {
 	/* background: url('../img/bg7_1.png') center top no-repeat; */
-	
+
 }
 
 .share-body {
-	
+
 }
 
 .share-heading {
@@ -837,6 +832,19 @@ section#guaranty {
 	/* margin-top: -180px; */
 }
 
+
+@media screen and (max-width: 320px) {
+	.owl-carousel .work-item .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.work-nav {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 #vh {
 	/* центрируем блок по вертикали.
     у родительского блока должна быть задана высота и ширина. */
@@ -876,7 +884,7 @@ section#guaranty {
 
 #testimonials {
 	/*   background: transparent url(../img/bg-grey.png) repeat 0 0; */
-	
+
 }
 
 #testimonials hr {
