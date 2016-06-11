@@ -448,13 +448,13 @@ section {
 }
 
 section h2.section-heading {
-	font-size: 40px;
+	font-size: 38px;
 	margin-top: 0;
 	margin-bottom: 20px
 }
 
 section h3.section-subheading {
-	font-size: 16px;
+	font-size: 22px;
 	text-transform: none;
 	font-style: italic;
 	font-weight: 400;
@@ -490,11 +490,11 @@ section#guaranty {
 /* guaranty */
 #guaranty h2.section-heading {
 	margin-top: 30px;
-	font-size: 36px;
+	font-size: 32px;
 }
 
 #guaranty h3.section-subheading {
-	font-size: 28px;
+	font-size: 26px;
 	text-transform: uppercase;
 	font-style: normal;
 	letter-spacing: 1px;
@@ -558,6 +558,17 @@ section#guaranty {
 	color: #333;
 }
 
+@media screen and (max-width: 320px) {
+	.share-heading {
+		font-size: 54px;
+	}
+	.share-subheading {
+		font-size: 24px;
+	}
+	.share-subheading .text-danger {
+		font-size: 20px;
+	}
+}
 /* @media (max-height: 768px) {
   .share-heading {
     font-size: 54px;
@@ -591,6 +602,7 @@ section#guaranty {
 }
 
 /* process */
+
 .timeline {
 	list-style: none;
 	padding: 0;
@@ -989,6 +1001,7 @@ section#guaranty {
 
 .contacts {
 	line-height: 40px;
+	font-size: 20px;
 }
 
 #map {
@@ -1021,7 +1034,7 @@ h2.brand {
 }
 
 .brand ul li {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 32px;
 	font-weight: 600;
 }
