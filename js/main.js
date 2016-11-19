@@ -162,12 +162,12 @@ function init() {
     .add(new ymaps.GeoObject({
       geometry: {
         type: "Point",
-        coordinates: [51.566717, 39.238465]
+        coordinates: [51.614345, 39.239082]
       },
       properties: {
         iconContent: 'Мастерская №1',
         balloonContentHeader: "Левый берег",
-        balloonContentBody: "Воронеж, ул. Приморская, 140",
+        balloonContentBody: "Воронеж, ул. Новосибирская, 13А к2",
       }
     }, {
       preset: 'islands#redStretchyIcon'
